@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #对脚本运行时间的计算
 #start_time不能放在函数里，必须放在脚本开头
 start_time=`date +"%s"`
