@@ -1,6 +1,7 @@
 #!/bin/bash
 Make_file(){
 	File_name=domain_file.txt
+	test -f $File_name && rm -f $File_name
 	echo -e "请输入,空行时结束输入：\r"
 	while read line;
 	do
