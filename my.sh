@@ -28,3 +28,17 @@ Wait_word(){
 		sleep 1
 	done
 }
+
+
+#ssh函数
+#使用了特殊的语法
+#利用特定command+seq的方式定位命令
+#使用方式
+#command1=“”
+#ssh_conmond {IP} {Seq}
+ssh_conmond(){
+	IP=$1
+	Seq=$2
+	ssh -i /t4_data/key/dzhqk_rsa -ldzhqk -p 62919 ${IP} `eval echo "$"command${Seq}`
+}
+
